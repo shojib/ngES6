@@ -1,1 +1,0 @@
-module.exports = require("github:angular-translate/bower-angular-translate-loader-url@2.6.1/angular-translate-loader-url");

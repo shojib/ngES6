@@ -1,1 +1,0 @@
-module.exports = require("github:angular-translate/bower-angular-translate-storage-local@2.6.1/angular-translate-storage-local");
