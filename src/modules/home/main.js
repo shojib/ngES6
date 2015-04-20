@@ -1,6 +1,6 @@
-import * as angular from "angular";
-
 "use strict";
+
+import angular from "angular";
 
 var Home = angular.module("ngGo.home", ["ui.router"]);
 
@@ -12,3 +12,6 @@ Home.config([
     });
   }
 ]);
+
+
+export default Home;

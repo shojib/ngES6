@@ -1,0 +1,1 @@
+module.exports = require("github:components/angular-resource@1.2.0/angular-resource");

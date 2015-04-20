@@ -1,0 +1,1 @@
+module.exports = require("github:angular-translate/bower-angular-translate-storage-cookie@2.6.1/angular-translate-storage-cookie");

@@ -1,0 +1,1 @@
+module.exports = require("github:angular/bower-angular-cookies@1.3.15/angular-cookies");

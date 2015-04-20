@@ -1,0 +1,32 @@
+{
+  "jspm": {
+    "main": "angular-translate-loader-static-files",
+    "registry": "jspm",
+    "format": "global",
+    "dependencies": {
+      "angular-translate": "^2.5.2"
+    },
+    "shim": {
+      "angular-translate-loader-static-files": {
+        "deps": [
+          "angular",
+          "angular-translate"
+        ]
+      }
+    }
+  },
+  "main": "angular-translate-loader-static-files",
+  "registry": "jspm",
+  "format": "global",
+  "shim": {
+    "angular-translate-loader-static-files": {
+      "deps": [
+        "angular",
+        "angular-translate"
+      ]
+    }
+  },
+  "dependencies": {
+    "angular-translate": "^2.5.2"
+  }
+}

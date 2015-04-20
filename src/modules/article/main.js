@@ -1,10 +1,14 @@
+"use strict";
+
 import * as factory from "article/files/factory";
 import * as service from "article/files/service";
 import * as controller from "article/files/controller";
 
-"use strict";
-
-var Article = angular.module("ngGo.article", ["ui.router", "ngAnimate", "ngResource"]);
+var Article = angular.module("ngGo.article", [
+  "ui.router", 
+  "ngAnimate", 
+  "ngResource"
+]);
 
 Article.config([
   "$stateProvider", function(state_provider) {
@@ -22,3 +26,5 @@ Article.config([
 Article.factory("factory", factory);
 Article.service("service", service);
 Article.controller("controller", controller);
+
+export default Article;
