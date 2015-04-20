@@ -15,7 +15,7 @@ Installation:
 -----------------
 
 <code>$ npm install</code><br>
-<code>$ bower install</code>
+<code>$ jspm install</code>
 
 
 Run:
