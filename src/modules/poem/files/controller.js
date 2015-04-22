@@ -8,3 +8,5 @@ var Ctrl = function(scope, translate, log) {
 };
 
 Ctrl.$inject = ["$scope", "$translate", "$log"];
+
+export default Ctrl;

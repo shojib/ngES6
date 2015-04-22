@@ -1,8 +1,8 @@
 "use strict";
 
-import * as factory from "article/files/factory";
-import * as service from "article/files/service";
-import * as controller from "article/files/controller";
+import * as factory from "./files/factory";
+import * as service from "./files/service";
+import * as controller from "./files/controller";
 
 var Article = angular.module("ngGo.article", [
   "ui.router", 

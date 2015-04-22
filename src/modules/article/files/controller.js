@@ -14,3 +14,5 @@ var Ctrl = function(scope, service, log) {
 };
 
 Ctrl.$inject = ["$scope", "service", "$log"];
+
+export default Ctrl;

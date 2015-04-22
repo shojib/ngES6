@@ -7,10 +7,10 @@ import ngTranslateLoader from "angular-translate/bower-angular-translate-loader-
 import ngTranslateStorageCookie from "angular-translate/bower-angular-translate-storage-cookie";
 import ngTranslateStorageLocal from "angular-translate/bower-angular-translate-storage-local";
 
-// import "/modules/common/main";
-// import "/modules/home/main.js";
-// import "/modules/poem/main";
-// import "/modules/article/main";
+import "./common/main";
+import "./home/main";
+import "./poem/main";
+import "./article/main";
 
 "use strict";
 

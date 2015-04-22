@@ -1,6 +1,6 @@
-import * as controller from "poem/files/controller";
-
 "use strict";
+
+import * as controller from "./files/controller";
 
 var Poem = angular.module("ngGo.poem", ["ui.router"]);
 
@@ -15,3 +15,5 @@ Poem.config([
 ]);
 
 Poem.controller("controller", controller);
+
+export default Poem;

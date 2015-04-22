@@ -1,8 +1,9 @@
-import * as http_interceptor from "common/http_interceptor/main";
-import * as header from "common/header/main";
-import * as error from "common/error/main";
-
 "use strict";
+
+import "./http_interceptor/main";
+import "./header/main";
+import "./error/main";
+
 
 var Common = angular.module("ngGo.common", [
 	"ngGo.http.interceptor", 
@@ -10,3 +11,5 @@ var Common = angular.module("ngGo.common", [
 	"ngGo.error"
 ]);
 
+
+export default Common;

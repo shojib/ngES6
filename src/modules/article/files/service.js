@@ -11,3 +11,5 @@ var Service = function(factory) {
 };
 
 Service.$inject = ["factory"];
+
+export default Service;

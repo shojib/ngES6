@@ -1,4 +1,3 @@
-
 "use strict";
 
 var Error = angular.module("ngGo.error", ["ui.router"]);
@@ -11,3 +10,5 @@ Error.config([
     });
   }
 ]);
+
+export default Error;

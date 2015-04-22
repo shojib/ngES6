@@ -26,3 +26,5 @@ var Factory = function(log, q) {
 };
 
 Factory.$inject = ["$log", "$q"];
+
+export default Factory;
