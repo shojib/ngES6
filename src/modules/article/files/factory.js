@@ -5,5 +5,3 @@ var Factory = function(resource, log) {
 };
 
 Factory.$inject = ["$resource", "$log"];
-
-export default Factory;

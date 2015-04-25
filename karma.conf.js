@@ -22,7 +22,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      'dist/modules/ngGo.js',
+      'dist/modules/ngES6.js',
       'dist/modules/main.js'
     ],
 

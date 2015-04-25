@@ -24,6 +24,7 @@ System.config({
     "angular-translate/bower-angular-translate-storage-local": "github:angular-translate/bower-angular-translate-storage-local@2.6.1",
     "angular-ui/ui-router": "github:angular-ui/ui-router@0.2.13",
     "angular/bower-angular-animate": "github:angular/bower-angular-animate@1.3.15",
+    "angular/bower-angular-resource": "github:angular/bower-angular-resource@1.3.15",
     "babel": "npm:babel-core@5.1.11",
     "babel-runtime": "npm:babel-runtime@5.1.11",
     "components/angular-resource": "github:components/angular-resource@1.2.0",
@@ -58,4 +59,3 @@ System.config({
     }
   }
 });
-

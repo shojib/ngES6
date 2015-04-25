@@ -13,7 +13,7 @@ define(["angular", "ngMocks", "uiRouter", "Home"],
         var scope;
 
         beforeEach(function() {
-          module('ngGo.home');
+          module('ngES6.home');
 
           inject(function($rootScope, $controller) {
             scope = $rootScope.$new();
@@ -21,7 +21,7 @@ define(["angular", "ngMocks", "uiRouter", "Home"],
         });
         
         it('Should have a Home module defined', function() {
-          expect('ngGo.home').toBeDefined();
+          expect('ngES6.home').toBeDefined();
         });
 
       });

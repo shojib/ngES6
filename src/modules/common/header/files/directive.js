@@ -6,5 +6,3 @@ var Directive = function() {
     templateUrl: "/modules/common/header/tmpl/header.html"
   };
 };
-
-export default Directive;

@@ -1,14 +1,12 @@
 "use strict";
 
-var Error = angular.module("ngGo.error", ["ui.router"]);
+var DefaultError = angular.module("ngES6.error.404", ["ui.router"]);
 
-Error.config([
-  "$stateProvider", function(state_provider) {
-    return state_provider.state("error404", {
+DefaultError.config([
+  "$stateProvider", function(stateProvider) {
+    stateProvider.state("error404", {
       url: "/error/404",
       templateUrl: "/modules/common/error/tmpl/404.html"
     });
   }
 ]);
-
-export default Error;

@@ -16,7 +16,7 @@ define(["angular", "ngMocks", "ngAnimate", "ngResource", "uiRouter", "Article"],
           module('ngResource');
           module('ui.router');
           module('ngAnimate');
-          module('ngGo.article');
+          module('ngES6.article');
 
           inject(function($rootScope, $controller, $resource) {
             scope = $rootScope.$new();
@@ -25,7 +25,7 @@ define(["angular", "ngMocks", "ngAnimate", "ngResource", "uiRouter", "Article"],
         });
         
         it('Should have an Article module defined', function() {
-          expect('ngGo.article').toBeDefined();
+          expect('ngES6.article').toBeDefined();
         });
         
         it('Should be equal to "education"', function() {

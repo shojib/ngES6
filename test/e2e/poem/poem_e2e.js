@@ -1,6 +1,6 @@
 /* @shojib */
 
-describe('ngGo e2e test:', function() {
+describe('ngES6 e2e test:', function() {
 
 	var ptor, driver,
 		url = 'http://localhost:9000/#/poem';

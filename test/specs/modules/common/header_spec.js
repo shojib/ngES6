@@ -13,11 +13,11 @@ define(["angular", "ngMocks", "uiRouter", "Header"],
         var scope;
 
         beforeEach(function() {
-          module('ngGo.header');
+          module('ngES6.header');
         });
         
         it('Should have a header module defined', function() {
-          expect('ngGo.header').toBeDefined();
+          expect('ngES6.header').toBeDefined();
         });
 
       });

@@ -1,9 +1,7 @@
 "use strict";
 
-import * as factory from "./files/factory"
+import factory from "./files/factory"
 
-var HttpInterceptor = angular.module("ngGo.http.interceptor", []);
+var HttpInterceptor = angular.module("ngES6.http.interceptor", []);
 
 HttpInterceptor.factory("HttpInterceptor", factory);
-
-export default HttpInterceptor;

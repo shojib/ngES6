@@ -22,9 +22,7 @@ var Factory = function(log, q) {
       return q.reject(rejection);
     }
   };
-  
+
 };
 
 Factory.$inject = ["$log", "$q"];
-
-export default Factory;

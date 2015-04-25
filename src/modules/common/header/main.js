@@ -1,9 +1,7 @@
 "use strict";
 
-import * as directive from "./files/directive";
+import directive from "./files/directive";
 
-var Header = angular.module("ngGo.header", []);
+var Header = angular.module("ngES6.header", []);
 
 Header.directive("header", directive);
-
-export default Header;

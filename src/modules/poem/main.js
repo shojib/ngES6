@@ -1,12 +1,12 @@
 "use strict";
 
-import * as controller from "./files/controller";
+import controller from "./files/controller";
 
-var Poem = angular.module("ngGo.poem", ["ui.router"]);
+var Poem = angular.module("ngES6.poem", ["ui.router"]);
 
 Poem.config([
-  "$stateProvider", function(state_provider) {
-    return state_provider.state("poem", {
+  "$stateProvider", function(stateProvider) {
+    stateProvider.state("poem", {
       url: "/poem",
       templateUrl: "/modules/poem/tmpl/poem.html",
       controller: controller
@@ -15,5 +15,3 @@ Poem.config([
 ]);
 
 Poem.controller("controller", controller);
-
-export default Poem;

@@ -15,7 +15,7 @@ define(["angular", "ngMocks", "uiRouter", "Poem", "ngTranslate"],
 				beforeEach(function() {
 					module('ui.router');
 					module('pascalprecht.translate');
-					module('ngGo.poem');
+					module('ngES6.poem');
 
 					inject(function($rootScope, $controller, $translate) {
 		        scope = $rootScope.$new();
@@ -26,7 +26,7 @@ define(["angular", "ngMocks", "uiRouter", "Poem", "ngTranslate"],
 				});
         
         it('Should have a Poem module defined', function() {
-          expect('ngGo.poem').toBeDefined();
+          expect('ngES6.poem').toBeDefined();
         });
 
 			});
