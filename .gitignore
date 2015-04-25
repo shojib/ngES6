@@ -3,6 +3,6 @@
 reports/
 node_modules/
 **/*.log
-dist/
+public/
 **/libs/
-src/jspm_packages/
+jspm_packages/

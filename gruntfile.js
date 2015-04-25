@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: ['dist'],
+    clean: ['public'],
 
     copy: {
       fonts: {
@@ -22,38 +22,11 @@ module.exports = function(grunt) {
       },
       libs: {
         expand: true,
-        cwd: '<%= pkg.folders.src %>/libs/',
-        src: '**/*',
-        dest: '<%= pkg.folders.build %>/libs'
-      },
-      jspm: {
-        expand: true,
-        cwd: '<%= pkg.folders.src %>/jspm_packages/',
+        cwd: 'jspm_packages/',
         src: '**/*',
         dest: '<%= pkg.folders.build %>/jspm_packages'
       }
     },
-
-    // requirejs: {
-    //   prod: {
-    //     options: {
-    //       baseUrl: '<%= pkg.folders.build %>/modules',
-    //       name: '../libs/almond/almond',
-    //       include: 'main',
-    //       mainConfigFile: '<%= pkg.folders.build %>/modules/main.js',
-    //       out: '<%= pkg.folders.build %>/modules/main.js',
-    //       optimize: 'uglify2',
-    //       wrapShim: false,
-    //       findNestedDependencies: true,
-    //       generateSourceMaps: false,
-    //       preserveLicenseComments: false,
-    //       useSourceUrl: false,
-    //       uglify2: {
-    //         mangle: false
-    //       }
-    //     }
-    //   }
-    // },
 
     babel: {
       compile_all: {
@@ -105,7 +78,7 @@ module.exports = function(grunt) {
         tasks: 'jade'
       }
     },
-    
+
     karma: {
       unit: {
         configFile: 'karma.conf.js'
@@ -136,14 +109,14 @@ module.exports = function(grunt) {
       server: {
         options:  {
           port: 9000,
-          base: 'dist/',
+          base: '<%= pkg.folders.build %>',
           hostname: 'localhost'
         }
       },
       keepalive: {
         options:  {
           port: 8000,
-          base: 'dist/',
+          base: '<%= pkg.folders.build %>',
           hostname: 'localhost',
           keepalive: true
         }
@@ -160,7 +133,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-protractor-runner');
   grunt.loadNpmTasks('grunt-selenium-webdriver');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -174,7 +146,7 @@ module.exports = function(grunt) {
 
   // E2E task(s).
   grunt.registerTask('e2e', [
-    'connect:server', 
+    'connect:server',
     'selenium_start', // PhantomJS only
     'selenium_phantom_hub', // PhantomJS only
     'protractor:e2e',
@@ -186,29 +158,28 @@ module.exports = function(grunt) {
     'unit',
     'e2e'
   ]);
-  
+
   // Build task(s).
   grunt.registerTask('compile', [
-    'clean', 
-    'copy', 
-    'babel', 
-    'jade', 
+    'clean',
+    'copy',
+    'babel',
+    'jade',
     'compass'
   ]);
-  
+
   // Build task(s).
   grunt.registerTask('prod', [
-    'compile', 
-    // 'requirejs',
+    'compile',
     'tests'
   ]);
-  
+
   // Build task(s).
   grunt.registerTask('dev', [
     'compile'
     // 'tests'
   ]);
-  
+
   // Web task(s).
   grunt.registerTask('web', [
     'dev',
@@ -222,14 +193,3 @@ module.exports = function(grunt) {
   ]);
 
 };
-
-
-
-
-
-
-
-
-
-
-

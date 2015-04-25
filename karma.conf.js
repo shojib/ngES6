@@ -14,16 +14,16 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test/specs/main.js',
-      {pattern: 'dist/libs/**/*.js', included: false},
-      {pattern: 'dist/modules/**/*.js', included: false},
+      {pattern: 'public/libs/**/*.js', included: false},
+      {pattern: 'public/modules/**/*.js', included: false},
       {pattern: 'test/specs/**/*spec.js', included: false}
     ],
 
 
     // list of files to exclude
     exclude: [
-      'dist/modules/ngES6.js',
-      'dist/modules/main.js'
+      'public/modules/ngES6.js',
+      'public/modules/main.js'
     ],
 
 

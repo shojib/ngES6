@@ -16,8 +16,6 @@ import "./home/main";
 import "./poem/main";
 import "./article/main";
 
-console.log("Loading ngES6");
-
 var ngES6 = angular.module("ngES6", [
   "pascalprecht.translate",
   "ui.router",
@@ -59,8 +57,6 @@ ngES6.config([
   }
 ]);
 
-ngES6.run(["$state", function(state) {
-  console.log("ngES6 Run: " + state.$current.name);
-}]);
+ngES6.run(function() {});
 
 angular.bootstrap(document, ["ngES6"]);
