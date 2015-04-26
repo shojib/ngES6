@@ -25,6 +25,12 @@ module.exports = function(grunt) {
         cwd: 'jspm_packages/',
         src: '**/*',
         dest: '<%= pkg.folders.build %>/jspm_packages'
+      },
+      config: {
+        expand: true,
+        cwd: '',
+        src: 'config.js',
+        dest: '<%= pkg.folders.build %>'
       }
     },
 

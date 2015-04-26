@@ -8,22 +8,28 @@ module.exports = function(config) {
 
 
     // frameworks to use
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['jasmine', 'jspm'],
+
+    jspm: {
+      config: "config.js",
+      // packages: "jspm_packages/",
+      loadFiles: ['test/specs/**/*.js'],
+      serveFiles: ['public/**/*']
+    },
+
+    // proxies: {
+    //   '/base/modules': '/base/public/modules',
+    //   '/jspm_packages': '/base/jspm_packages'
+    // },
 
 
     // list of files / patterns to load in the browser
-    files: [
-      'test/specs/main.js',
-      {pattern: 'public/jspm_packages/**/*.js', included: false},
-      {pattern: 'public/modules/**/*.js', included: false},
-      {pattern: 'test/specs/**/*spec.js', included: false}
-    ],
+    files: [],
 
 
     // list of files to exclude
     exclude: [
-      'public/modules/ngES6.js',
-      'public/modules/config.js'
+      // 'public/modules/ngES6.js'
     ],
 
 
@@ -32,7 +38,8 @@ module.exports = function(config) {
     // 'karma-firefox-launcher'
     // 'karma-ie-launcher'
     plugins: [
-      'karma-requirejs',
+      'karma-babel-preprocessor',
+      'karma-jspm',
       'karma-jasmine',
       'karma-coverage',
       'karma-phantomjs-launcher'
@@ -46,9 +53,15 @@ module.exports = function(config) {
 
     // Cover the following JS files for report
     preprocessors: {
-      'test/specs/**/*.js': ['coverage']
+      'test/specs/**/*.js': ['babel', 'coverage']
     },
 
+    babelPreprocessor: {
+  	  options: {
+  		  sourceMap: 'inline',
+  		  modules: 'system'
+  	  }
+  	},
 
     // Spec report location and format
     coverageReporter: {
@@ -67,7 +80,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_ERROR,
+    // logLevel: config.LOG_ERROR,
 
 
     // enable / disable watching file and executing tests whenever any file changes
