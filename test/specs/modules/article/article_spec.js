@@ -1,10 +1,10 @@
 /* @shojib */
 
-define(["angular", "ngMocks", "ngAnimate", "ngResource", "uiRouter", "Article"], 
+'use strict';
 
-  function(angular, mocks, animate, resource, router, article) {
-    
-    'use strict';
+define(["require", "angular", "ngMocks", "ngAnimate", "ngResource", "uiRouter", "Article"],
+
+  function(require, angular, mocks, animate, resource, router, article) {
 
     describe('Article Module Test:', function() {
 
@@ -23,11 +23,11 @@ define(["angular", "ngMocks", "ngAnimate", "ngResource", "uiRouter", "Article"],
             $controller('controller', {$scope: scope});
           });
         });
-        
+
         it('Should have an Article module defined', function() {
           expect('ngES6.article').toBeDefined();
         });
-        
+
         it('Should be equal to "education"', function() {
           expect(scope.search_query).toBe('Technology');
         });

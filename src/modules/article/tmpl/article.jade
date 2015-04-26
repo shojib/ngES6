@@ -2,9 +2,9 @@
   .col-lg
     .col-lg
       .input-group
-        input.form-control(type="text", ng-model="search_query", ng-keypress="find_articles($event)") 
+        input.form-control(type="text", ng-model="searchQuery", ng-keypress="findArticles($event)") 
         .input-group-btn
-          button.btn.btn-default(ng-click="find_articles('')") Search
+          button.btn.btn-default(ng-click="findArticles('')") Search
     .col-sm
       .input-group
         input.form-control(type="text", ng-model="article_filter")    
@@ -14,7 +14,7 @@
   br
   br
 
-  ul.media-group(ng-init="find_articles('')")
+  ul.media-group(ng-init="findArticles('')")
     li.media.repeat-item(ng-repeat="article in articles.response.docs | filter: article_filter")
       a.pull-right(href="{{article.web_url}}", ng-show="article.multimedia[0].url")
         img.media-object(src="http://www.nytimes.com/{{article.multimedia[0].url}}")

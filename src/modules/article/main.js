@@ -1,5 +1,6 @@
 "use strict";
 
+import angular from "angular";
 import factory from "./files/factory";
 import service from "./files/service";
 import controller from "./files/controller";

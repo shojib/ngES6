@@ -1,5 +1,7 @@
 "use strict";
 
+import angular from "angular";
+
 var DefaultError = angular.module("ngES6.error.404", ["ui.router"]);
 
 DefaultError.config([

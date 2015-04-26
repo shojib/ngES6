@@ -1,10 +1,10 @@
 /* @shojib */
 
-define(["angular", "ngMocks", "uiRouter", "Home"], 
+'use strict';
 
-  function(angular, mocks, router, home) {
-    
-    'use strict';
+define(["require", "angular", "ngMocks", "uiRouter", "Home"],
+
+  function(require, angular, mocks, router, home) {
 
     describe('Home Module Test:', function() {
 
@@ -19,7 +19,7 @@ define(["angular", "ngMocks", "uiRouter", "Home"],
             scope = $rootScope.$new();
           });
         });
-        
+
         it('Should have a Home module defined', function() {
           expect('ngES6.home').toBeDefined();
         });
@@ -29,5 +29,5 @@ define(["angular", "ngMocks", "uiRouter", "Home"],
     });
 
   }
-  
+
 );

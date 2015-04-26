@@ -23,6 +23,7 @@ System.config({
     "angular-translate/bower-angular-translate-storage-local": "github:angular-translate/bower-angular-translate-storage-local@2.6.1",
     "angular-ui/ui-router": "github:angular-ui/ui-router@0.2.13",
     "angular/bower-angular-animate": "github:angular/bower-angular-animate@1.3.15",
+    "angular/bower-angular-mocks": "github:angular/bower-angular-mocks@1.3.15",
     "angular/bower-angular-resource": "github:angular/bower-angular-resource@1.3.15",
     "babel": "npm:babel-core@5.1.11",
     "babel-runtime": "npm:babel-runtime@5.1.11",
@@ -50,6 +51,9 @@ System.config({
     "github:angular/bower-angular-cookies@1.3.15": {
       "angular": "github:angular/bower-angular@1.3.15"
     },
+    "github:angular/bower-angular-mocks@1.3.15": {
+      "angular": "github:angular/bower-angular@1.3.15"
+    },
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
@@ -58,3 +62,4 @@ System.config({
     }
   }
 });
+

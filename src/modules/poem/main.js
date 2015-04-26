@@ -1,5 +1,6 @@
 "use strict";
 
+import angular from "angular";
 import controller from "./files/controller";
 
 var Poem = angular.module("ngES6.poem", ["ui.router"]);

@@ -1,5 +1,7 @@
 "use strict";
 
+import angular from "angular";
+
 var Home = angular.module("ngES6.home", ["ui.router"]);
 
 Home.config([

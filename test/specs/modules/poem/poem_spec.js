@@ -1,10 +1,10 @@
 /* @shojib */
 
-define(["angular", "ngMocks", "uiRouter", "Poem", "ngTranslate"], 
+'use strict';
 
-	function(angular, mocks, rotuer, poem, translate) {
-			
-		'use strict';
+define(["require", "angular", "ngMocks", "uiRouter", "ngTranslate", "Poem"],
+
+	function(require, angular, mocks, rotuer, translate, poem) {
 
 		describe('Poem Module Test:', function() {
 
@@ -24,7 +24,7 @@ define(["angular", "ngMocks", "uiRouter", "Poem", "ngTranslate"],
 		        $controller('controller', {$scope: scope, $translate: translate});
 		    	});
 				});
-        
+
         it('Should have a Poem module defined', function() {
           expect('ngES6.poem').toBeDefined();
         });
@@ -32,6 +32,6 @@ define(["angular", "ngMocks", "uiRouter", "Poem", "ngTranslate"],
 			});
 
 		});
-		
+
 	}
 );

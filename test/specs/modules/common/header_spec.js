@@ -1,10 +1,10 @@
 /* @shojib */
 
-define(["angular", "ngMocks", "uiRouter", "Header"], 
+'use strict';
 
-  function(angular, mocks, router, header) {
-    
-    'use strict';
+define(["require", "angular", "ngMocks", "uiRouter", "Header"],
+
+  function(require, angular, mocks, router, header) {
 
     describe('Header Module Test:', function() {
 
@@ -15,7 +15,7 @@ define(["angular", "ngMocks", "uiRouter", "Header"],
         beforeEach(function() {
           module('ngES6.header');
         });
-        
+
         it('Should have a header module defined', function() {
           expect('ngES6.header').toBeDefined();
         });

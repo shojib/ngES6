@@ -2,7 +2,7 @@
 
 var Service = function(factory) {
   return {
-    find_articles: function(query) {
+    find: function(query) {
       return factory.get({
         q: query
       }).$promise;

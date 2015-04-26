@@ -1,5 +1,6 @@
 "use strict";
 
+import angular from "angular";
 import "./http_interceptor/main";
 import "./header/main";
 import "./error/main";

@@ -14,7 +14,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test/specs/main.js',
-      {pattern: 'public/libs/**/*.js', included: false},
+      {pattern: 'public/jspm_packages/**/*.js', included: false},
       {pattern: 'public/modules/**/*.js', included: false},
       {pattern: 'test/specs/**/*spec.js', included: false}
     ],
@@ -23,7 +23,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
       'public/modules/ngES6.js',
-      'public/modules/main.js'
+      'public/modules/config.js'
     ],
 
 
