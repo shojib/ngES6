@@ -21,12 +21,13 @@ body {
   background-color: $body-bg-color;
 }
 
-a {
-  text-decoration: none !important;
-  color: $mainColor;
-  &:hover {
-    color: blue !important;
-  }
+.block-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inline-center {
+  text-align: center;
 }
 
 .container {
@@ -34,7 +35,7 @@ a {
   width: 700px;
   padding: 0px 70px;
   color: $color;
-  font-family: $font-family; 
+  font-family: $font-family;
 
   h3, h5 {
     font-weight: bold;
@@ -47,6 +48,7 @@ a {
   ui-view {
     position: relative;
     display: block;
+    min-height: 200px;
   }
 
   .default-container {
@@ -94,54 +96,3 @@ a {
   }
 
 }
-
-
-.hex-wrapper {
-  float: left; 
-  width: 100%;
-  height: 350px;
-
-  .hex {
-      float: left;
-      margin-left: 3px;
-      margin-bottom: -26px;
-    
-    .top {
-        width: 0;
-        border-bottom: 30px solid #6C6;
-        border-left: 52px solid transparent;
-        border-right: 52px solid transparent;
-    }
-    .middle {
-        width: 104px;
-        height: 60px;
-        background: #6C6;
-
-        .link {
-          line-height: 3.5;
-          font-size: 17px;
-          color: white;
-        }
-    }
-    .bottom {
-        width: 0;
-        border-top: 30px solid #6C6;
-        border-left: 52px solid transparent;
-        border-right: 52px solid transparent;
-    }
-
-  }
-
-  .hex-row {
-        clear: left;
-        
-        &.even {
-          margin-left: 53px;
-        }
-    }
-
-}
-
-
-
-

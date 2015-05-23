@@ -2,11 +2,6 @@
 
 'use strict';
 
-import angular from "angular";
-import "angular-ui/ui-router";
-import "angular/bower-angular-mocks";
-import Header from "public/modules/common/header/main";
-
 describe('Header Module Test:', function() {
 
   describe('Controller:', function() {
@@ -14,11 +9,11 @@ describe('Header Module Test:', function() {
     var scope;
 
     beforeEach(function() {
-      module(Header.name);
+      angular.mock.module('ngES6.header');
     });
 
     it('Should have a header module defined', function() {
-      expect(Header.name).toBeDefined();
+      expect('ngES6.header').toBeDefined();
     });
 
   });

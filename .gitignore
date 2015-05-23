@@ -6,3 +6,4 @@ node_modules/
 public/
 **/libs/
 jspm_packages/
+.settings
