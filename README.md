@@ -7,7 +7,7 @@ ngES6 is an AngularJS + ES6 seed, which is an all javascript front-end solution.
 + Language: ES6
 + Template Engine: Jade
 + Dependency and Package Management: SystemJS, JSPM
-+ JS Task Runner: Grunt
++ JS Task Runner: Gulp
 + Unit & E2E Test Frameworks: PhantomJS, Karma, Jasmine, Protractor
 
 
