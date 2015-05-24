@@ -15,7 +15,6 @@ import "./common/main";
 import "./home/main";
 import "./poem/main";
 import "./article/main";
-import "./reactjs/main";
 
 var ngES6 = angular.module("ngES6", [
   "pascalprecht.translate",
@@ -24,8 +23,7 @@ var ngES6 = angular.module("ngES6", [
   "ngES6.common",
   "ngES6.home",
   "ngES6.poem",
-  "ngES6.article",
-  "ngES6.reactjs"
+  "ngES6.article"
 ]);
 
 ngES6.config([
