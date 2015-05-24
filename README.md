@@ -18,6 +18,12 @@ Installation:
 <code>$ jspm install</code>
 
 
+Tests:
+-----------------
+
+<code>$ grunt tests</code>
+
+
 Run:
 -----------------
 
