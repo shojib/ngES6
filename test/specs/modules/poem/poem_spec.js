@@ -9,6 +9,7 @@ describe('Poem Module Test:', function() {
 		var scope, translate, translateProvider;
 
 		beforeEach(function() {
+			angular.mock.module('pascalprecht.translate');
 			angular.mock.module('ngES6.poem');
 
 			inject(function($rootScope, $controller, $translate) {

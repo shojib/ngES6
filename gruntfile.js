@@ -139,7 +139,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-protractor-runner');
   grunt.loadNpmTasks('grunt-selenium-webdriver');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -177,14 +176,12 @@ module.exports = function(grunt) {
 
   // Build task(s).
   grunt.registerTask('prod', [
-    'compile',
-    'tests'
+    'compile'
   ]);
 
   // Build task(s).
   grunt.registerTask('dev', [
     'compile'
-    // 'tests'
   ]);
 
   // Web task(s).
