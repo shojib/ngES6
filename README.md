@@ -1,7 +1,7 @@
 ngES6 v0.1
 ====================
 
-ngES6 is an AngularJS + ES6 seed, which is an all javascript front-end solution. It works out of the box and contains some of the things that you need to kickstart your next Angular projects. The code is nicely modularized, and supports dependency management, unit tests, and e2e tests.
+ngES6 is an AngularJS + ES6 seed. It works out of the box and contains some of the things that you need to kickstart your next Angular projects. The code is nicely modularized, and supports dependency management, unit tests, and e2e tests.
 
 + Framework/Library: AngularJS, Babel
 + Language: ES6
